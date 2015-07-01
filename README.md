@@ -8,6 +8,7 @@ By the end of this lesson, students should be able to:
 
 * Substitute jQuery methods for vanilla JS DOM manipulation methods
 * Reference jQuery documentation when learning a new technique
+* Cite two advantages to using jQuery over vanilla JS
 
 ## Instructions
 
