@@ -80,8 +80,6 @@ Here is a list of most commonly used jQuery API functions:
 **[each()](http://api.jquery.com/each)**
 : Iterates over a set of matched elements
 
-We'll count off and take a few minutes to research these methods. The goal is to explain what each method does in your own words. We'll share our thoughts and compile a reference list.
-
 ## Additional Resources
 
 * [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
