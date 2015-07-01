@@ -37,6 +37,26 @@ For example, have a look at [.val()](https://api.jquery.com/val/). Note in the t
 
 Reading the documentation, we discover that `.val()` is getter on an element, but that `.val(value)` is a setter on an element. Be sure you're using the correct method. Reading examples is very helpful, and the jQuery examples in the docs are fully functional!
 
+## Common jQuery Functions
+
+Here is a list of most commonly used jQuery API functions:
+
+* **[find()](http://api.jquery.com/find)**
+* **[hide()](http://api.jquery.com/hide)**
+* **[show()](http://api.jquery.com/show)**
+* **[html()](http://api.jquery.com/html)**
+* **[append()](http://api.jquery.com/append)**
+* **[prepend()](http://api.jquery.com/prepend)**
+* **[on()](http://api.jquery.com/on)**
+* **[off()](http://api.jquery.com/off)**
+* **[css()](http://api.jquery.com/css)**
+* **[attr()](http://api.jquery.com/attr)**
+* **[val()](http://api.jquery.com/val)**
+* **[text()](http://api.jquery.com/text)**
+* **[each()](http://api.jquery.com/each)**
+
+We'll count off and take a few minutes to research these methods. The goal is to explain what each method does in your own words. We'll share our thoughts and compile a reference list.
+
 ## Additional Resources
 
 * [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
