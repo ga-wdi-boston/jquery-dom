@@ -41,19 +41,44 @@ Reading the documentation, we discover that `.val()` is getter on an element, bu
 
 Here is a list of most commonly used jQuery API functions:
 
-1. **[find()](http://api.jquery.com/find)**
-1. **[hide()](http://api.jquery.com/hide)**
-1. **[show()](http://api.jquery.com/show)**
-1. **[html()](http://api.jquery.com/html)**
-1. **[append()](http://api.jquery.com/append)**
-1. **[prepend()](http://api.jquery.com/prepend)**
-1. **[on()](http://api.jquery.com/on)**
-1. **[off()](http://api.jquery.com/off)**
-1. **[css()](http://api.jquery.com/css)**
-1. **[attr()](http://api.jquery.com/attr)**
-1. **[val()](http://api.jquery.com/val)**
-1. **[text()](http://api.jquery.com/text)**
-1. **[each()](http://api.jquery.com/each)**
+**[find()](http://api.jquery.com/find)**
+: Selects elements based on the provided selector string
+
+**[hide()](http://api.jquery.com/hide)**
+: Hides an element if it was visible
+
+**[show()](http://api.jquery.com/show)**
+: Shows an element if it was hidden
+
+**[html()](http://api.jquery.com/html)**
+: Gets or sets an inner HTML of an element
+
+**[append()](http://api.jquery.com/append)**
+: Injects an element into the DOM after the selected element
+
+**[prepend()](http://api.jquery.com/prepend)**
+: Injects an element into the DOM before the selected element
+
+**[on()](http://api.jquery.com/on)**
+: Attaches an event listener to an element
+
+**[off()](http://api.jquery.com/off)**
+: Detaches an event listener from an element
+
+**[css()](http://api.jquery.com/css)**
+: Gets or sets the style attribute value of an element
+
+**[attr()](http://api.jquery.com/attr)**
+: Gets or sets any attribute of an element
+
+**[val()](http://api.jquery.com/val)**
+: Gets or sets the value attribute of an element
+
+**[text()](http://api.jquery.com/text)**
+: Gets the combined text of an element and its children
+
+**[each()](http://api.jquery.com/each)**
+: Iterates over a set of matched elements
 
 We'll count off and take a few minutes to research these methods. The goal is to explain what each method does in your own words. We'll share our thoughts and compile a reference list.
 
