@@ -1,42 +1,22 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Javascript Assignment Name
+# Javascript: Introduction to jQuery
 
 ## Objectives
 
-By the end of this, students should be able to:
+By the end of this lesson, students should be able to:
 
-- Objective 1
-- Objective 2
-- Objective 3
+* Substitute jQuery methods for vanilla JS DOM manipulation methods
+* Reference jQuery documentation when learning a new technique
 
 ## Instructions
 
-Include explict step-by-step instructions about the goals of the assignment, and how to run the code.
+1. Fork and clone this repo.
+1. Change into the project directory.
+1. Follow your instructor's instructions.
 
-Make sure to wrap section of code in appropriate markdown like `ls -al`, and denote the language as below for longer sections:
+## Exercise
 
-```javascript
-function(){
-  var x = 2
-  var y = 3
-  return x + y
-};
+The code provided in this repo is a simple list-keeping app. We worked through this code yesterday, reading and annotating to get a better idea of how the app worked.
 
-```
-
-## Bonus (Optional Section)
-
-If you're looking for extra challenge or practice once you've completed the above, try to...
-
-## Notes
-
-Gotcha's and extra information
-
-## Additional Resources
-
-List additional related resources such as videos, blog posts and official documentation.
-
-- Item 1
-- Item 2
-- Item 3
+You may either follow along as I refactor this code to use jQuery, or you may focus on taking notes. The app will be available in its jQuery implementation on another branch.
