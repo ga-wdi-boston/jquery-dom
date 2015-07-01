@@ -1,31 +1,29 @@
 'use strict';
 
 window.onload = function() {
-    var your_name = prompt("What is your name?"),
-        button,
-    thing_list;
+  var yourName = prompt('What is your name?');
 
-    document.getElementById('name').innerHTML = your_name;
+  document.getElementById('name').innerHTML = yourName;
 
-    thing_list = document.getElementById('fav-list');
+  var thingList = document.getElementById('fav-list');
 
-    button = document.getElementById('new-thing-button');
-    button.onclick = function(event) {
-        event.preventDefault();
-        MyApp.add_to_list(thing_list);
-    };
+  var button = document.getElementById('new-thing-button');
+  button.onclick = function(event) {
+    event.preventDefault();
+    MyApp.addToList(thingList);
+  };
 };
 
 // We can define things outside of the window.onload which are evaluated
 // // only when called.
 var MyApp = {};
 
-MyApp.add_to_list = function(list) {
-    var new_li = document.createElement('li'),
-        new_item_text = document.getElementById('new-thing');
-    new_li.innerHTML = new_item_text.value;
-    new_item_text.value = "";
-    if (new_li.innerHTML !== "") {
-        list.appendChild(new_li);
-    }
+MyApp.addToList = function(list) {
+  var newLi = document.createElement('li');
+  var newItemText = document.getElementById('new-thing');
+  newLi.innerHTML = newItemText.value;
+  newItemText.value = '';
+  if (newLi.innerHTML !== '') {
+    list.appendChild(newLi);
+  }
 };
