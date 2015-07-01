@@ -39,8 +39,6 @@ Reading the documentation, we discover that `.val()` is getter on an element, bu
 
 ## Common jQuery Functions
 
-Here is a list of most commonly used jQuery API functions:
-
 **[find()](http://api.jquery.com/find)**
 : Selects elements based on the provided selector string
 
