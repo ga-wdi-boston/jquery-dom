@@ -1,29 +1,32 @@
 'use strict';
 
-window.onload = function() {
+var $ = require('jquery');
+
+$(document).ready(function() {
   var yourName = prompt('What is your name?');
 
-  document.getElementById('name').innerHTML = yourName;
+  $('#name').html(yourName);
 
-  var thingList = document.getElementById('fav-list');
+  var $thingList = $('#fav-list');
 
-  var button = document.getElementById('new-thing-button');
-  button.onclick = function(event) {
+  var $button = $('#new-thing-button');
+  // button.onclick = function(event) {
+  $button.on('click', function(event) {
     event.preventDefault();
-    MyApp.addToList(thingList);
-  };
-};
+    MyApp.addToList($thingList);
+  });
+});
 
 // We can define things outside of the window.onload which are evaluated
 // // only when called.
 var MyApp = {};
 
 MyApp.addToList = function(list) {
-  var newLi = document.createElement('li');
-  var newItemText = document.getElementById('new-thing');
-  newLi.innerHTML = newItemText.value;
-  newItemText.value = '';
-  if (newLi.innerHTML !== '') {
-    list.appendChild(newLi);
+  var $newLi = $('<li>');
+  var $newItemText = $('#new-thing');
+  $newLi.html($newItemText.val());
+  $newItemText.val('');
+  if ($newLi.html() !== '') {
+    list.append($newLi);
   }
 };
