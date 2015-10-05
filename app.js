@@ -6,15 +6,36 @@ var init = function init() {
   document.getElementById('name').textContent = yourName;
 
   var thingList = document.getElementById('fav-list');
-
   var button = document.getElementById('new-thing-button');
+  var checkbox = document.getElementById('click-handler-box');
 
-  var buttonClick = function buttonClick(event) {
+  var buttonClickHandler = function buttonClick(event) {
     event.preventDefault();
     MyApp.addToList(thingList);
   };
 
-  button.addEventListener('click', buttonClick);
+  var liClickHandler = function liClick(event) {
+    var text = event.target.textContent;
+    alert(text);
+  };
+
+  var checkboxChangeHandler = function checkboxChange(event) {
+    var listElements = thingList.children;
+    var numListElements = thingList.childElementCount;
+
+    if(event.target.checked) {
+      for(var index=0; index < numListElements; index++) {
+        listElements[index].addEventListener('click', liClickHandler);
+      }
+    } else {
+      for(var index=0; index < numListElements; index++) {
+        listElements[index].removeEventListener('click', liClickHandler);
+      }
+    }
+  };
+
+  button.addEventListener('click', buttonClickHandler);
+  checkbox.addEventListener('change', checkboxChangeHandler);
 };
 
 window.addEventListener('load', init);
