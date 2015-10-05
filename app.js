@@ -3,7 +3,7 @@
 window.onload = function() {
   var yourName = prompt('What is your name?');
 
-  document.getElementById('name').innerHTML = yourName;
+  document.getElementById('name').textContent = yourName;
 
   var thingList = document.getElementById('fav-list');
 
@@ -21,9 +21,9 @@ var MyApp = {};
 MyApp.addToList = function(list) {
   var newLi = document.createElement('li');
   var newItemText = document.getElementById('new-thing');
-  newLi.innerHTML = newItemText.value;
+  newLi.textContent = newItemText.value;
   newItemText.value = '';
-  if (newLi.innerHTML !== '') {
+  if (newLi.textContent !== '') {
     list.appendChild(newLi);
   }
 };
