@@ -1,6 +1,6 @@
 'use strict';
 
-window.onload = function() {
+var init = function init() {
   var yourName = prompt('What is your name?');
 
   document.getElementById('name').textContent = yourName;
@@ -8,11 +8,16 @@ window.onload = function() {
   var thingList = document.getElementById('fav-list');
 
   var button = document.getElementById('new-thing-button');
-  button.onclick = function(event) {
+
+  var buttonClick = function buttonClick(event) {
     event.preventDefault();
     MyApp.addToList(thingList);
   };
+
+  button.addEventListener('click', buttonClick);
 };
+
+window.addEventListener('load', init);
 
 // We can define things outside of the window.onload which are evaluated
 // // only when called.
