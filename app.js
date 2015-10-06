@@ -6,12 +6,21 @@ var init = function init() {
   document.getElementById('name').textContent = yourName;
 
   var thingList = document.getElementById('fav-list');
-  var button = document.getElementById('new-thing-button');
+  var newThingButton = document.getElementById('new-thing-button');
   var checkbox = document.getElementById('click-handler-box');
+  var closeListButton = document.getElementById('close-list-button');
 
-  var buttonClickHandler = function buttonClick(event) {
+  var newThingButtonClickHandler = function newThingButtonClick(event) {
     event.preventDefault();
     MyApp.addToList(thingList);
+  };
+
+  var closeListButtonClickHandler = function closeListButtonClick(event) {
+    newThingButton.disabled = !newThingButton.disabled;
+    console.log(newThingButton.disabled);
+    event.target.textContent = event.target.textContent === "No more things" ?
+      "More things" :
+      "No more things";
   };
 
   var liClickHandler = function liClick(event) {
@@ -34,7 +43,8 @@ var init = function init() {
     }
   };
 
-  button.addEventListener('click', buttonClickHandler);
+  newThingButton.addEventListener('click', newThingButtonClickHandler);
+  closeListButton.addEventListener('click', closeListButtonClickHandler);
   checkbox.addEventListener('change', checkboxChangeHandler);
 };
 
