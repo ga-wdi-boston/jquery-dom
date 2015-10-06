@@ -1,4 +1,4 @@
-![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)
 
 # JavaScript Document Object Model Manipulation
 
@@ -8,12 +8,13 @@ By the end of this lesson, students should be able to:
 
 - Recognize the Document Object Model (DOM) as a data structure
 - Compare and contrast the DOM with arrays and maps
-- Use JS to get data out of the DOM
-- Use JS to put data into the DOM
+- Put data into the DOM using JS
+- Get data from the DOM using JS
+- Find solutions to common DOM tasks using MDN and Google
 
 ## Instructions
 
-1. Fork and clone this repo.
+1. [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) this repo.
 1. Change into the project directory.
 1. Follow your instructor's instructions.
 
@@ -57,3 +58,13 @@ We've provided some code for a simple list-keeping app. Play around with the app
 Next, work with a partner to read the application's JS code. Annotate the code with comments to explain what (nearly) every line does. If you don't know, Google it!
 
 After you've had time for self-discovery, we'll go through the code together share our annotations.
+
+## Lab
+
+Use some of the new tools you've learned to change all the headlines at [TMZ](http://www.tmz.com)
+
+[License](LICENSE)
+------------------
+
+Source code distributed under the MIT license. Text and other assets copyright
+General Assembly, Inc., all rights reserved.
