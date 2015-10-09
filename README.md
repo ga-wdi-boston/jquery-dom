@@ -1,6 +1,6 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Javascript: Introduction to jQuery
+# Introduction to jQuery
 
 ## Objectives
 
@@ -10,27 +10,57 @@ By the end of this lesson, students should be able to:
 * Reference jQuery documentation when learning a new technique
 * Cite two advantages to using jQuery over vanilla JS
 
-## Instructions
+## jQuery and the DOM
 
-1. Fork and clone this repo.
-1. Change into the project directory.
-1. Follow your instructor's instructions.
+By now, you've learned about the DOM and seen how we can use JavaScript to interact with it - reading values from it, and writing values to it. The DOM's _**API**_ (application programming interface) give us access to a couple of different methods that allow us to select elements from the DOM.
 
-## Exercise
+* `document.getElementById` retrieves a single element with a matching ID.
+* `document.getElementsByClassName` retrieves an array of elements that match the given class.
+* `document.getElementsByTagName` retrieves an array of elements that are of the given type.
 
-The code provided in this repo is a simple list-keeping app. We worked through this code yesterday, reading and annotating to get a better idea of how the app worked.
+However, these options are somewhat limiting. What if we wanted to retrieve the first `<li>` on a particular list with class `specialList`? We might be able to find it by using the `children` property, but that's a little clunky. If we were using CSS, we could just write a selector like this to style that element:
 
-You may either follow along as I refactor this code to use jQuery, or you may focus on taking notes. The app will be available in its jQuery implementation on another branch.
+```CSS
+.specialList li:first-child {
+  ...
+}
+```
 
-Our general approach will be:
+Wow - short and powerful! Wouldn't it be nice if we could select elements in the same way?
+
+Enter jQuery. jQuery is an open-source project that was released in 2006, and it's currently the most widely used JavaScript library on the web; originally, it was going to be called "JSelect", but the domain name "JSelect.com" was taken, so its creator, John Resig, decided to call it jQuery instead.
+
+jQuery allows us to query (i.e. select elements from) the DOM using the exact same selector syntax that we've used in CSS. To select the element described above, we would write
+
+```jQuery
+jQuery(".specialList li:first-child")
+```
+
+This will return a 'jQuery Object' - think of it as an abstraction for the search results from our query. You can retrieve any of the specific results using array notation (`jQuery("...")[i]`). There are also a number of special methods on the 'jQuery Object' that you can call which will manipulate the DOM for _all elements select by the query, at once_. These methods can do things like:
+
+* change styling
+* add event listeners for specific events
+* write brand new content (text _and_ HTML) into the page
+
+Writing 'jQuery' every time we want to make a query is a little tedious, though, so the jQuery team kindly created a shorthand reference that you can use to refer to jQuery : `$`. We can rewrite our jQuery code above as follows.
+
+```jQuery
+$(".specialList li:first-child")
+```
+
+### Activity :: Trading JavaScript for jQuery
+
+Now let's use jQuery to refactor some JS code! You may either follow along as or you may focus on taking notes. The app will be available in its jQuery implementation on another branch.
+
+<!-- Our general approach will be:
 
 1. `npm install` to install dependencies.
 1. `grunt browserify` to put all of our JS in one file (this will be important later).
 1. Change our application code to use jQuery. When we don't know how to do something, we'll first Google for a hint and the check the jQuery documentation.
 1. `grunt browserify` and refresh the page each time we want see our changes.
-1. Commit our changes when we've finished.
+1. Commit our changes when we've finished. -->
 
-## Notes
+#### Notes
 
 When reading the jQuery documentation, be sure to scroll through the whole document to ensure you're looking at the correct method signature. Most jQuery methods change their behavior depending on the number of arguments they have when called.
 
@@ -38,9 +68,7 @@ For example, have a look at [.val()](https://api.jquery.com/val/). Note in the t
 
 Reading the documentation, we discover that `.val()` is getter on an element, but that `.val(value)` is a setter on an element. Be sure you're using the correct method. Reading examples is very helpful, and the jQuery examples in the docs are fully functional!
 
-## Common jQuery Functions
-
-Here is a list of most commonly used jQuery API functions:
+Here is a list of many commonly used jQuery API functions:
 
 1. **[find()](http://api.jquery.com/find)**
 1. **[hide()](http://api.jquery.com/hide)**
