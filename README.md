@@ -43,6 +43,7 @@ some built-in methods that make using the DOM easier.
 
 -   Deface the broncos
 -   Add console snippet
+  `var script = document.createElement('script');script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";document.getElementsByTagName('head')[0].appendChild(script);`
 
 ## jQuery Setters & Getters
 
@@ -82,9 +83,6 @@ Here is a list of most commonly used jQuery API functions:
 1.  [`text()`](http://api.jquery.com/text)
 1.  [`each()`](http://api.jquery.com/each)
 
-We'll count off and take a few minutes to research these methods. The goal is to
-explain what each method does in your own words. We'll share our thoughts and
-compile a reference list.
 
 ## Gotchas
 
