@@ -132,6 +132,13 @@ $("#thisOne").on('click', function(){
 });
 ```
 
+## Best Practices
+
+-   When attaching a `click` handler, opt for the `.on('click', function(){})`
+version over the `.click(function(){})` verion.
+-   Use `$.ajax()` over `$.get()`. The `$.ajax` version is preferable because
+of its use of `promises` which we'll cover later on in the course.
+
 ## Gotchas
 
 -   Beware the difference between jQuery setters and getters
