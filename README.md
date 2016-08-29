@@ -84,6 +84,53 @@ Here is a list of most commonly used jQuery API functions:
 1.  [`text()`](http://api.jquery.com/text)
 1.  [`each()`](http://api.jquery.com/each)
 
+## event.target
+
+Open the console in chrome and paste the following code in.
+
+```js
+$("#toctitle").on('click', function(event){
+  console.log("event is ", event);
+});
+```
+
+How would we access specific attributes of that event? Try adding this code
+now as well:
+
+```js
+$("#toctitle").on('click', function(event){
+  console.log("event.target is ", event.target);
+});
+$("#toctitle").on('click', function(event){
+  console.log("event.target is ", event.type);
+});
+```
+
+## Bubbling
+
+When dealing with the DOM and click handlers, we're faced with a small
+problem that is simple to work-around if you know it exists. **Bubbling**
+occurs when an event takes place on a child element of the
+DOM that **does not** have an event handler of its own. In the scenario
+that this happens, the browser will search up the DOM chain until it finds
+an appropriate event handler.
+
+In the example below we have a click handler registered on the <ul> with
+ `id="thisOne"`. However, if we were to click the 2nd <li> with
+ `<!--the innermost-->`, it will still run our click handler.
+
+```html
+<ul> id="thisOne" class="d1">1  <!-- the topmost --></ul>
+  <li class="d2">2</li>
+  <li class="d3">3 <!-- the innermost --></li>
+</ul>
+```
+
+```js
+$("#thisOne").on('click', function(){
+  // do some stuff here
+});
+```
 
 ## Gotchas
 
