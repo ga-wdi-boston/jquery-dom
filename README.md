@@ -16,10 +16,11 @@ By the end of this lesson, students should be able to:
 
 -   The DOM is a recursive tree.
 
-The DOM is a (potential) large object that describes the structure of our
+The DOM is a (potentially) large object that describes the structure of our
 content. Since it's an object, we can use normal techniques to get and set data!
 In the browser, the DOM is represented by the `document` object. JS specifies
-some built-in methods that make using the DOM easier.
+some built-in methods that make using the DOM easier. Remember! The DOM
+**is not** the source code.
 
 ## jQuery
 
