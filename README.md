@@ -16,10 +16,11 @@ By the end of this lesson, students should be able to:
 
 -   The DOM is a recursive tree.
 
-The DOM is a (potential) large object that describes the structure of our
+The DOM is a (potentially) large object that describes the structure of our
 content. Since it's an object, we can use normal techniques to get and set data!
 In the browser, the DOM is represented by the `document` object. JS specifies
-some built-in methods that make using the DOM easier.
+some built-in methods that make using the DOM easier. Remember! The DOM
+**is not** the source code.
 
 ## jQuery
 
@@ -120,10 +121,15 @@ In the example below we have a click handler registered on the <ul> with
  `<!--the innermost-->`, it will still run our click handler.
 
 ```html
-<ul> id="thisOne" class="d1">1  <!-- the topmost --></ul>
-  <li class="d2">2</li>
-  <li class="d3">3 <!-- the innermost --></li>
-</ul>
+<html>
+  <div>
+    <ul> id="thisOne" class="d1">Title  <!-- the topmost --></ul>
+      <li class="d2">1</li>
+      <li class="d2">2</li>
+      <li class="d3">3 <!-- the innermost --></li>
+    </ul>
+  </div>
+</html>
 ```
 
 ```js
@@ -132,10 +138,17 @@ $("#thisOne").on('click', function(){
 });
 ```
 
+As a quick review, what would the DOM tree look like for the above html? Let's
+take 2 minutes and diagram it together. What would we do if the `<li>`s or the
+ `<ul>` as a whole weren't present on time of page load, but we needed to add
+some event handlers for them?
+
 ## Best Practices
 
--   When attaching a `click` handler, opt for the `.on('click', function(){})`
-version over the `.click(function(){})` verion.
+-   When attaching a `click` handler (or any handler), opt for the
+`.on('click', function(){})` version over the `.click(function(){})` verion. The
+ reason is `.on('click', )` accepts more arguments so we can be more specific
+ with our handlers. See [.click()](https://api.jquery.com/click/) vs. [.on()](http://api.jquery.com/on/)
 -   Use `$.ajax()` over `$.get()`. The `$.ajax` version is preferable because
 of its use of `promises` which we'll cover later on in the course.
 
