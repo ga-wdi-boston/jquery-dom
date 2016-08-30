@@ -120,10 +120,15 @@ In the example below we have a click handler registered on the <ul> with
  `<!--the innermost-->`, it will still run our click handler.
 
 ```html
-<ul> id="thisOne" class="d1">1  <!-- the topmost --></ul>
-  <li class="d2">2</li>
-  <li class="d3">3 <!-- the innermost --></li>
-</ul>
+<html>
+  <div>
+    <ul> id="thisOne" class="d1">Title  <!-- the topmost --></ul>
+      <li class="d2">1</li>
+      <li class="d2">2</li>
+      <li class="d3">3 <!-- the innermost --></li>
+    </ul>
+  </div>
+</html>
 ```
 
 ```js
@@ -131,6 +136,8 @@ $("#thisOne").on('click', function(){
   // do some stuff here
 });
 ```
+
+As a quick review, what would the DOM tree look like for the above html?
 
 ## Best Practices
 
