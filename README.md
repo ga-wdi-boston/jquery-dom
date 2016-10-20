@@ -38,8 +38,7 @@ some built-in methods that make using the DOM easier. Remember! The DOM
 
 ## Demo: Diagram the DOM
 
-1.  Demo translating a wireframe into a tree diagram (should resemble the next
-    sections)
+Demo translating a wireframe into a tree diagram.
 
 ## Lab: Diagram the DOM
 
@@ -48,14 +47,16 @@ some built-in methods that make using the DOM easier. Remember! The DOM
 1.  Consultant: Draw the solution
 1.  Discussion and questions
 
-## DOM Traversal
+## Code-Along: DOM Traversal
 
 -   Deface the [Broncos](https://en.wikipedia.org/wiki/Denver_Broncos)
 -   Add console snippet below to use jQuery.
 
   `var script = document.createElement('script');script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";document.getElementsByTagName('head')[0].appendChild(script);`
 
-## jQuery Setters & Getters
+  <!-- Use jQuery to change the Broncos page -->
+
+## Demo: jQuery Setters & Getters
 
 When reading the jQuery documentation, be sure to scroll through the whole
 document to ensure you're looking at the correct method signature. Most jQuery
@@ -70,6 +71,17 @@ Reading the documentation, we discover that `.val()` is getter on an element,
 but that `.val(value)` is a setter on an element. Be sure you're using the
 correct method. Reading examples is very helpful, and the jQuery examples in the
 docs are fully functional!
+
+We can use `.val()` on the Broncos page to get and set text in the search box.
+
+## Demo: DOM Events and Event Handlers
+
+The DOM emits 'events' when users interact with the browser. Event handlers
+'listen' for DOM events emited from the DOM node they are 'attached' to, and run
+code when that event happens. Some common events that we might want to use event handlers on are `'click'`, `'hover'`, `'focus'`, or user keystrokes.
+[Full list of DOM events](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+<!-- Demonstrate using an event handler on the Broncos page -->
 
 ## Lab: Register an Event Handler
 
@@ -93,7 +105,7 @@ Here is a list of most commonly used jQuery API functions:
 1.  [`text()`](http://api.jquery.com/text)
 1.  [`each()`](http://api.jquery.com/each)
 
-## event.target
+## Demo: event.target
 
 Open the console in chrome and paste the following code in.
 
@@ -114,6 +126,7 @@ $("#toctitle").on('click', function(event){
   console.log("event.target is ", event.type);
 });
 ```
+<!-- Use .on() on the Broncos page to demonstrate -->
 
 ## Bubbling
 
