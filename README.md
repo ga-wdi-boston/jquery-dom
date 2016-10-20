@@ -12,6 +12,14 @@ By the end of this lesson, students should be able to:
 -   Get data from the DOM using jQuery
 -   Put data into the DOM using jQuery
 
+## Preparation
+
+1.  Fork and clone this repository.
+ [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  Create a new branch, `training`, for your work.
+1.  Checkout to the `training` branch.
+1.  Install dependencies with `npm install`.
+
 ## The Document Object Model (DOM)
 
 -   The DOM is a recursive tree.
@@ -163,3 +171,8 @@ of its use of `promises` which we'll cover later on in the course.
 
 -   [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 -   [jQuery API Documentation](https://api.jquery.com/)
+
+## License
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
