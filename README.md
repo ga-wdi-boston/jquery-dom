@@ -175,10 +175,13 @@ of its use of `promises` which we'll cover later on in the course.
 
 ## Gotchas
 
--   Beware the difference between jQuery setters and getters
+-   Beware the difference between jQuery setters and getters.
 -   Beware the difference between a jQuery collection and a
-    [jQuery](http://api.jquery.com/Types/#jQuery) object
+    [jQuery](http://api.jquery.com/Types/#jQuery) object.
 -   Beware the difference between `.html()`, `.text()`, and `.val()`
+-   Beware treating jQuery objects as arrays. They aren't!
+-   Beware attaching click handlers in a loop. It won't work, and it isn't
+    necessary, because when you use `.on('click')` jQuery will attach the eventHandler on every single node in the jQuery object.
 
 ## Additional Resources
 
