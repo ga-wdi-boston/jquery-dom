@@ -170,8 +170,6 @@ some event handlers for them?
 `.on('click', function(){})` version over the `.click(function(){})` verion. The
  reason is `.on('click', )` accepts more arguments so we can be more specific
  with our handlers. See [.click()](https://api.jquery.com/click/) vs. [.on()](http://api.jquery.com/on/)
--   Use `$.ajax()` over `$.get()`. The `$.ajax` version is preferable because
-of its use of `promises` which we'll cover later on in the course.
 
 ## Gotchas
 
