@@ -123,7 +123,7 @@ $("#toctitle").on('click', function(event){
   console.log("event.target is ", event.target);
 });
 $("#toctitle").on('click', function(event){
-  console.log("event.target is ", event.type);
+  console.log("event.type is ", event.type);
 });
 ```
 <!-- Use .on() on the Broncos page to demonstrate -->
