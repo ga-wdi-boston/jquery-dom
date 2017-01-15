@@ -27,7 +27,7 @@ By the end of this lesson, students should be able to:
 The DOM is a (potentially) large object that describes the structure of our
 content. Since it's an object, we can use normal techniques to get and set data!
 In the browser, the DOM is represented by the `document` object. JS specifies
-some built-in methods that make using the DOM easier. Remember! The DOM
+some built-in methods that make using the DcoOM easier. Remember! The DOM
 **is not** the source code.
 
 ## jQuery
@@ -49,12 +49,12 @@ Demo translating a wireframe into a tree diagram.
 
 ## Code-Along: DOM Traversal
 
--   Deface the [Broncos](https://en.wikipedia.org/wiki/Denver_Broncos)
+-   Deface the [Jimmy Buffet](https://en.wikipedia.org/wiki/Jimmy_Buffett)
 -   Add console snippet below to use jQuery.
 
   `var script = document.createElement('script');script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";document.getElementsByTagName('head')[0].appendChild(script);`
 
-  <!-- Use jQuery to change the Broncos page -->
+  <!-- Use jQuery to change the Jimmy Buffet page -->
 
 ## Demo: jQuery Setters & Getters
 
@@ -72,7 +72,7 @@ but that `.val(value)` is a setter on an element. Be sure you're using the
 correct method. Reading examples is very helpful, and the jQuery examples in the
 docs are fully functional!
 
-We can use `.val()` on the Broncos page to get and set text in the search box.
+We can use `.val()` on the Jimmy Buffet page to get and set text in the search box.
 
 ## Demo: DOM Events and Event Handlers
 
@@ -81,11 +81,11 @@ The DOM emits 'events' when users interact with the browser. Event handlers
 code when that event happens. Some common events that we might want to use event handlers on are `'click'`, `'hover'`, `'focus'`, or user keystrokes.
 [Full list of DOM events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-<!-- Demonstrate using an event handler on the Broncos page -->
+<!-- Demonstrate using an event handler on the Jimmy Buffet page -->
 
 ## Lab: Register an Event Handler
 
-Continue defacing the Broncos.  This time with an event handler.
+Continue defacing the Jimmy Buffet.  This time with an event handler.
 
 ## Lab: Research Common jQuery Functions
 
@@ -126,7 +126,7 @@ $("#toctitle").on('click', function(event){
   console.log("event.type is ", event.type);
 });
 ```
-<!-- Use .on() on the Broncos page to demonstrate -->
+<!-- Use .on() on the Jimmy Buffet page to demonstrate -->
 
 ## Bubbling
 
