@@ -185,6 +185,7 @@ some event handlers for them?
 
 -   [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 -   [jQuery API Documentation](https://api.jquery.com/)
+-   [Quick jQuery Reference Cheatsheet](https://oscarotero.com/jquery/)
 
 ## License
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
