@@ -77,7 +77,7 @@ We can use `.val()` on the Jimmy Buffet page to get and set text in the search b
 ## Demo: DOM Events and Event Handlers
 
 The DOM emits 'events' when users interact with the browser. Event handlers
-'listen' for DOM events emited from the DOM node they are 'attached' to, and run
+'listen' for DOM events emitted from the DOM node they are 'attached' to, and run
 code when that event happens. Some common events that we might want to use event handlers on are `'click'`, `'hover'`, `'focus'`, or user keystrokes.
 [Full list of DOM events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
@@ -186,6 +186,7 @@ some event handlers for them?
 -   [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 -   [jQuery API Documentation](https://api.jquery.com/)
 -   [Quick jQuery Reference Cheatsheet](https://oscarotero.com/jquery/)
+-   [JS Fiddle Event Bubbling Example](http://jsfiddle.net/cwtuan/je1g3f29/16/)
 
 ## License
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
