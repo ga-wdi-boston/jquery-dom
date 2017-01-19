@@ -49,12 +49,12 @@ Demo translating a wireframe into a tree diagram.
 
 ## Code-Along: DOM Traversal
 
--   Deface the [Broncos](https://en.wikipedia.org/wiki/Denver_Broncos)
+-   Deface the [Jimmy Buffet](https://en.wikipedia.org/wiki/Jimmy_Buffett)
 -   Add console snippet below to use jQuery.
 
   `var script = document.createElement('script');script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";document.getElementsByTagName('head')[0].appendChild(script);`
 
-  <!-- Use jQuery to change the Broncos page -->
+  <!-- Use jQuery to change the Jimmy Buffet page -->
 
 ## Demo: jQuery Setters & Getters
 
@@ -72,20 +72,20 @@ but that `.val(value)` is a setter on an element. Be sure you're using the
 correct method. Reading examples is very helpful, and the jQuery examples in the
 docs are fully functional!
 
-We can use `.val()` on the Broncos page to get and set text in the search box.
+We can use `.val()` on the Jimmy Buffet page to get and set text in the search box.
 
 ## Demo: DOM Events and Event Handlers
 
 The DOM emits 'events' when users interact with the browser. Event handlers
-'listen' for DOM events emited from the DOM node they are 'attached' to, and run
+'listen' for DOM events emitted from the DOM node they are 'attached' to, and run
 code when that event happens. Some common events that we might want to use event handlers on are `'click'`, `'hover'`, `'focus'`, or user keystrokes.
 [Full list of DOM events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-<!-- Demonstrate using an event handler on the Broncos page -->
+<!-- Demonstrate using an event handler on the Jimmy Buffet page -->
 
 ## Lab: Register an Event Handler
 
-Continue defacing the Broncos.  This time with an event handler.
+Continue defacing the Jimmy Buffet.  This time with an event handler.
 
 ## Lab: Research Common jQuery Functions
 
@@ -126,7 +126,7 @@ $("#toctitle").on('click', function(event){
   console.log("event.type is ", event.type);
 });
 ```
-<!-- Use .on() on the Broncos page to demonstrate -->
+<!-- Use .on() on the Jimmy Buffet page to demonstrate -->
 
 ## Bubbling
 
@@ -185,6 +185,9 @@ some event handlers for them?
 
 -   [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 -   [jQuery API Documentation](https://api.jquery.com/)
+-   [Quick jQuery Reference Cheatsheet](https://oscarotero.com/jquery/)
+-   [JS Fiddle Event Bubbling Example](http://jsfiddle.net/cwtuan/je1g3f29/16/)
+-   [Live DOM tree viewer](https://software.hixie.ch/utilities/js/live-dom-viewer/)
 
 ## License
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.

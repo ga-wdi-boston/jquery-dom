@@ -4,14 +4,14 @@
   },
 
   "status": {
-    "src": ["<%= paths.src.all %>"],
+    "src": ["<%= paths.scripts.all %>"],
     "options": {
       "force": true
     }
   },
 
   "write": {
-    "src": ["<%= paths.src.all %>"],
+    "src": ["<%= paths.scripts.all %>"],
     "options": {
       "fix": true
     }
