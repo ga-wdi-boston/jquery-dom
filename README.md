@@ -111,8 +111,8 @@ Open the console in chrome and paste the following code in.
 
 ```js
 $("#toctitle").on('click', function(event){
-  console.log("event is ", event);
-});
+  console.log("event is ", event)
+})
 ```
 
 How would we access specific attributes of that event? Try adding this code
@@ -120,11 +120,11 @@ now as well:
 
 ```js
 $("#toctitle").on('click', function(event){
-  console.log("event.target is ", event.target);
-});
+  console.log("event.target is ", event.target)
+})
 $("#toctitle").on('click', function(event){
-  console.log("event.type is ", event.type);
-});
+  console.log("event.type is ", event.type)
+})
 ```
 <!-- Use .on() on the Jimmy Buffet page to demonstrate -->
 
@@ -156,7 +156,7 @@ In the example below we have a click handler registered on the <ul> with
 ```js
 $("#thisOne").on('click', function(){
   // do some stuff here
-});
+})
 ```
 
 As a quick review, what would the DOM tree look like for the above html? Let's
